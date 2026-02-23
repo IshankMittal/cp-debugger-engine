@@ -8,7 +8,7 @@ Instead of blindly sending code to a language model, this system first performs 
 
 Everything runs on your machine. No APIs. No cloud. No internet dependency.
 
-This project demonstrates:
+## This project demonstrates:
 
 -Systems design
 -Compiler integration
