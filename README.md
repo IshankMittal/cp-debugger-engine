@@ -157,14 +157,9 @@ The project focuses on practical systems integration rather than simple API-base
 1. User submits C++ code
 2. Backend compiles using g++
 3. If compilation fails:
-4. If compilation fails:
 
    - Analysis mode → return compiler diagnostics
    - Fix mode → send compiler errors to LLM
-```
--Analysis mode → return compiler errors
--Fix mode → send errors to LLM
-```
 4. LLM runs locally via CUDA
 5. Output is cleaned using regex
 6. Clean JSON response returned
