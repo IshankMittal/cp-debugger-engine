@@ -1,4 +1,4 @@
-# CP Debugger Engine (offline)
+# CP Debugger Engine
 
 **A compiler-aware C++ debugging engine integrating native compilation analysis with CUDA-accelerated local LLM inference.**
 
@@ -118,9 +118,6 @@ docs/installation.md
 - Python
 - Flask
 - requests
-- subprocess
-- tempfile
-- regex (`re`)
 
 ### AI Stack
 
@@ -140,29 +137,30 @@ docs/installation.md
 - Ninja
 - Visual Studio 2022 Build Tools
 
-## Why This Project Matters
+## Engineering Highlights
 
-This project demonstrates:
+This project combines multiple engineering domains into a single **offline debugging workflow**.
 
-- Compiler integration
-- Local LLM serving infrastructure
-- CUDA acceleration
-- Deterministic inference control
-- Structured prompt routing
-- Developer tooling workflows
-- Hybrid systems + AI architecture
+Key areas demonstrated:
 
-It combines:
+- Compiler-aware backend orchestration
+- Local LLM inference infrastructure
+- CUDA-accelerated model serving
+- Deterministic prompt routing
+- Developer tooling through CLI workflows
+- Structured post-processing pipelines
+- Hybrid compiler + AI debugging architecture
 
-- Systems Programming
-- AI Infrastructure
-- Backend Engineering
-- Developer Tooling
+The project focuses on practical systems integration rather than simple API-based AI usage.
 
 ## How It Works
 1. User submits C++ code
 2. Backend compiles using g++
 3. If compilation fails:
+4. If compilation fails:
+
+   - Analysis mode → return compiler diagnostics
+   - Fix mode → send compiler errors to LLM
 ```
 -Analysis mode → return compiler errors
 -Fix mode → send errors to LLM
