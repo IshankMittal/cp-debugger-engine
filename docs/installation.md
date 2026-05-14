@@ -145,29 +145,53 @@ http://localhost:8080
 ```
 
 ## Setup CP Debugger Engine
-Clone your repository:
+### 1. Clone your repository:
 ```
 git clone https://github.com/IshankMittal/cp-debugger-engine.git
 cd cp-debugger-engine
 ```
 
-Create virtual environment:
+### 2. Create virtual environment:
 ```
 python -m venv venv
 venv\Scripts\activate
 ```
 
-Install dependencies:
+### 3. Install dependencies:
 ```
 pip install -r backend/requirements.txt
 ```
 
-## Start Backend
+### 4. Start Backend
 ```
-python backend/app.py
+cd backend
+
+python app.py
 ```
 
 Open:
 ```
+http://127.0.0.1:5000
+```
+
+## 5. Run CLI
+
+Example:
+
+```bash
+python cli.py ../examples/test.cpp
+```
+
+Fix mode:
+
+```bash
+python cli.py ../examples/test.cpp --fix
+```
+
+## 6. Open Browser UI
+
+Open:
+
+```text
 http://127.0.0.1:5000
 ```
