@@ -137,9 +137,9 @@ docs/installation.md
 - Ninja
 - Visual Studio 2022 Build Tools
 
-## Engineering Highlights
+## Highlights
 
-This project combines multiple engineering domains into a single **offline debugging workflow**.
+This project combines multiple domains into a single **offline debugging workflow**.
 
 Key areas demonstrated:
 
