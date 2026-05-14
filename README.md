@@ -89,6 +89,76 @@ cp-debugger-engine/
 └── venv/
 ```
 
+## CLI Usage
+
+Analyze code:
+
+```bash
+python cli.py ../examples/test.cpp
+```
+
+Generate corrected code:
+
+```bash
+python cli.py ../examples/test.cpp --fix
+```
+
+## Installation
+
+Full installation guide available in:
+
+```text
+docs/installation.md
+```
+
+## Technologies Used
+
+### Backend
+
+- Python
+- Flask
+- requests
+- subprocess
+- tempfile
+- regex (`re`)
+
+### AI Stack
+
+- llama.cpp
+- DeepSeek-Coder 6.7B
+- CUDA Toolkit 12.4
+
+### Frontend
+
+- HTML
+- CSS
+- JavaScript
+
+### Build Tools
+
+- CMake
+- Ninja
+- Visual Studio 2022 Build Tools
+
+## Why This Project Matters
+
+This project demonstrates:
+
+- Compiler integration
+- Local LLM serving infrastructure
+- CUDA acceleration
+- Deterministic inference control
+- Structured prompt routing
+- Developer tooling workflows
+- Hybrid systems + AI architecture
+
+It combines:
+
+- Systems Programming
+- AI Infrastructure
+- Backend Engineering
+- Developer Tooling
+
 ## How It Works
 1. User submits C++ code
 2. Backend compiles using g++
