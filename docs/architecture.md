@@ -14,9 +14,7 @@ The project combines:
 
 into a single debugging pipeline.
 
----
-
-# High-Level Architecture
+## High-Level Architecture
 
 ```text
 Browser UI / CLI
@@ -41,11 +39,9 @@ Flask Backend (Orchestrator)
                               JSON Response
 ```
 
----
+## System Components
 
-# System Components
-
-## 1. Frontend Layer
+### 1. Frontend Layer
 
 The frontend provides a lightweight browser-based interface for:
 
@@ -61,9 +57,7 @@ The frontend is implemented using:
 - CSS
 - JavaScript
 
----
-
-## 2. CLI Layer
+### 2. CLI Layer
 
 The project also supports direct command-line usage.
 
@@ -81,9 +75,7 @@ python cli.py test.cpp --fix
 
 CLI support transforms the project from a browser application into a developer utility.
 
----
-
-## 3. Flask Backend
+### 3. Flask Backend
 
 The Flask backend acts as the orchestration layer.
 
@@ -102,9 +94,7 @@ Main endpoint:
 /debug
 ```
 
----
-
-## 4. Compiler Validation Layer
+### 4. Compiler Validation Layer
 
 Before invoking the language model, the system performs real compilation using:
 
@@ -119,20 +109,16 @@ This provides:
 - Reduced hallucinated errors
 - Deterministic debugging flow
 
----
+## Decision Flow
 
-# Decision Flow
-
-## Case 1
+### Case 1
 
 Compiler Error + Fix Mode OFF
 
 Result:
 - Return compiler diagnostics directly
 
----
-
-## Case 2
+### Case 2
 
 Compiler Error + Fix Mode ON
 
@@ -140,9 +126,7 @@ Result:
 - Send compiler diagnostics to LLM
 - Generate corrected code
 
----
-
-## Case 3
+### Case 3
 
 Valid Compilation + Fix Mode OFF
 
@@ -151,18 +135,14 @@ Result:
 - Discuss edge cases
 - Analyze time complexity
 
----
-
-## Case 4
+### Case 4
 
 Valid Compilation + Fix Mode ON
 
 Result:
 - Generate optimized corrected implementation
 
----
-
-# LLM Inference Layer
+## LLM Inference Layer
 
 Inference is handled locally using:
 
@@ -184,9 +164,7 @@ Benefits:
 - Better privacy
 - Local GPU acceleration
 
----
-
-# Why DeepSeek-Coder Was Chosen
+## Why DeepSeek-Coder Was Chosen
 
 DeepSeek-Coder was selected because:
 
@@ -196,18 +174,16 @@ DeepSeek-Coder was selected because:
 - Small enough for RTX 3050 4GB VRAM
 - Good balance between speed and quality
 
----
-
-# Output Sanitization
+## Output Sanitization
 
 LLM outputs often contained:
 
 - Markdown wrappers
 - Extra explanations
 - Tags like:
-  - [OUT]
-  - [ANSWER]
-  - [RESP]
+  - `[OUT]`
+  - `[ANSWER]`
+  - `[RESP]`
 
 Regex-based cleaning was implemented to:
 
@@ -216,9 +192,7 @@ Regex-based cleaning was implemented to:
 - Improve CLI readability
 - Return compiler-ready output
 
----
-
-# CUDA Acceleration
+## CUDA Acceleration
 
 The project uses CUDA acceleration through llama.cpp.
 
@@ -234,9 +208,7 @@ Benefits:
 - Better GPU utilization
 - Reduced response latency
 
----
-
-# Current Limitations
+## Current Limitations
 
 Current limitations include:
 
@@ -246,9 +218,7 @@ Current limitations include:
 - No multi-file project support
 - Cannot fully verify correctness without problem statement
 
----
-
-# Future Improvements
+## Future Improvements
 
 Planned upgrades:
 
@@ -261,9 +231,7 @@ Planned upgrades:
 - Automatic corrected-file saving
 - Batch debugging workflows
 
----
-
-# Engineering Concepts Demonstrated
+## Engineering Concepts Demonstrated
 
 This project demonstrates:
 
