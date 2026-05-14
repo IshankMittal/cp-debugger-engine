@@ -220,7 +220,7 @@ http://127.0.0.1:5000
 
 ## CLI Mode
 
-The project also includes a command-line interface for direct terminal usage.
+The project also includes a command-line interface for direct terminal usage. (run this on editor terminal)
 
 Example:
 
