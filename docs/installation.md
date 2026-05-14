@@ -174,7 +174,7 @@ Open:
 http://127.0.0.1:5000
 ```
 
-## 5. Run CLI
+### 5. Run CLI
 
 Example:
 
@@ -188,7 +188,7 @@ Fix mode:
 python cli.py ../examples/test.cpp --fix
 ```
 
-## 6. Open Browser UI
+### 6. Open Browser UI
 
 Open:
 
