@@ -94,12 +94,14 @@ cp-debugger-engine/
 Analyze code:
 
 ```bash
+cd backend
 python cli.py ../examples/test.cpp
 ```
 
 Generate corrected code:
 
 ```bash
+cd backend
 python cli.py ../examples/test.cpp --fix
 ```
 
