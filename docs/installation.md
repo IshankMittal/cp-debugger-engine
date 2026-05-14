@@ -179,12 +179,14 @@ http://127.0.0.1:5000
 Example:
 
 ```bash
+cd backend
 python cli.py ../examples/test.cpp
 ```
 
 Fix mode:
 
 ```bash
+cd backend
 python cli.py ../examples/test.cpp --fix
 ```
 
