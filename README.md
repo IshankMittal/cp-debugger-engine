@@ -250,10 +250,21 @@ python cli.py test.cpp --fix
 ```
 cp-debugger-engine/
 │
-├── app.py
-├── requirements.txt
-├── templates/
+├── backend/
+│   ├── app.py
+│   ├── cli.py
+│   ├── requirements.txt
+│
+├── frontend/
+│   └── templates/
 │       └── index.html
+│
+├── examples/
+│   └── test.cpp
+│
+├── docs/
+│
 ├── README.md
 ├── .gitignore
+└── venv/
 ```
