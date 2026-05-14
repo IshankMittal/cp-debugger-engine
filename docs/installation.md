@@ -165,7 +165,6 @@ pip install -r backend/requirements.txt
 ### 4. Start Backend
 ```
 cd backend
-
 python app.py
 ```
 
